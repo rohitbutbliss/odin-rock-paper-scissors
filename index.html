@@ -5,10 +5,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock,Paper,Scissor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+        * {
+            font-family: 'Courier Prime', monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("./images/ezgif-5-5283fc8662.gif");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .description>* {
+            margin: 10px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+
+        }
+
+        .option {
+            display: flex;
+            justify-content: center;
+            width: 25%;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+            height: 160px;
+            padding: 20px;
+        }
+
+        .option:hover {
+            border: 2px solid white;
+        }
+
+        img {
+            max-height: 100%;
+            /* width: 100%; */
+        }
+
+        .scoreline {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+        }
+
+        .score-heading {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .scoreboard-bottom {
+            display: flex;
+            height: fit-content;
+        }
+
+        .earth-score,
+        .alien-score {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .middle-line {
+            width: 5px;
+            height: 100px;
+            background-color: white;
+        }
+
+        .choices {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .together {
+            display: flex;
+            align-items: center;
+        }
+
+        .earth-choice>div,
+        .alien-choice>div {
+            height: 160px;
+            width: 400px;
+        }
+
+        .earth-choice,
+        .alien-choice {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 200px;
+        }
+
+        .earth-choice img,
+        .alien-choice img {
+            height: 100%;
+        }
+
+        .ending-text {
+            margin: 30px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
+    <!--
+        In a world on the brink of an alien invasion, a crucial decision must be made to save humanity. The fate of Earth hangs in the balance as the alien challenges us to a game of rock-paper-scissors. Your move will determine if our world survives. Choose wisely: rock, paper, or scissors.
+     -->
 
+    <h1>Echoes of Harmony: The Intergalactic Choice</h1>
+
+    <div class="description">
+        <p>
+            In a world on the brink of an alien invasion, a crucial decision must be made to save humanity. The fate of
+            Earth hangs
+            in the balance as the alien challenges us to a game of rock-paper-scissors. Your move will determine if our
+            world
+            survives. Choose wisely: rock, paper, or scissors.
+        </p>
+
+        <h2>First to 5 points wins!</h2>
+
+        <p>Make your choice now : </p>
+    </div>
+    <div class="options">
+        <div class="option">
+            <img src="./images/rock.png" alt="rock">
+        </div>
+        <div class="option">
+            <img src="./images/paper.png" alt="paper">
+        </div>
+        <div class="option">
+            <img src="./images/scissors.png" alt="scissors">
+        </div>
+    </div>
+
+    <div class="together">
+
+
+        <div class="scoreline">
+            <div class="scoreboard-top">
+                <span class="score-heading">
+                    Score
+                </span>
+            </div>
+            <div class="scoreboard-bottom">
+
+                <div class="earth-score">
+                    <span>Earth</span>
+                    <span class="score">0</span>
+                </div>
+                <div class="middle-line"></div>
+                <div class="alien-score">
+                    <span>Alien</span>
+                    <span class="score">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="choices">
+            <div class="earth-choice">
+                <span>Earth's Choice</span>
+                <div></div>
+            </div>
+            <span>vs</span>
+            <div class="alien-choice">
+                <span>Aliens' Choice</span>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="ending-text"></div>
+    <script>
+
+    </script>
     <script src="./script.js"></script>
 </body>
 
